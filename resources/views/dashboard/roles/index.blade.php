@@ -45,12 +45,12 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-success" href="{{ route('roles.up', ['id' => $role->id]) }}">
-                                        <i class="cil-arrow-thick-top"></i> 
+                                        <i class="cil-arrow-thick-top"></i>
                                     </a>
                                 </td>
                                 <td>
                                     <a class="btn btn-success" href="{{ route('roles.down', ['id' => $role->id]) }}">
-                                        <i class="cil-arrow-thick-bottom"></i>  
+                                        <i class="cil-arrow-thick-bottom"></i>
                                     </a>
                                 </td>
                                 <td>

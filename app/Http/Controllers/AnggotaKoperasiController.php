@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AnggotaKoperasi;
 use Illuminate\Http\Request;
+use App\Models\Koperasi\AnggotaKoperasi;
 
 class AnggotaKoperasiController extends Controller
 {
 
     public function index()
     {
-        //
+        $anggota = AnggotaKoperasi::all(['kode','nama','departemen','bagian']);
+        return view('dashboard.koperasi.index', compact('anggota'));
     }
 
     /**
@@ -20,7 +21,7 @@ class AnggotaKoperasiController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.koperasi.create');
     }
 
     /**
@@ -31,7 +32,14 @@ class AnggotaKoperasiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $anggota = new AnggotaKoperasi;
+        $anggota->kode = $request->kode;
+        $anggota->nama = $request->nama;
+        $anggota->departemen = $request->departemen;
+        $anggota->bagian = $request->bagian;
+        $anggota->save();
+
+        return redirect()->route('/anggota-koperasi');
     }
 
     /**
