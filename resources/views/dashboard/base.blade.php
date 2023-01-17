@@ -76,6 +76,7 @@
           @yield('content')
 
         </main>
+        @include('sweetalert::alert')
         @include('dashboard.shared.footer')
       </div>
     </div>

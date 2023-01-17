@@ -60,7 +60,7 @@ class BreadController extends Controller
                     'options' => $formService->getFormOptions(),
                     'model'   => $request->input('model'),
                     'roles'   => $rolesService->get(),
-                ]); 
+                ]);
             }
         }else{
             $validatedData = $request->validate([
@@ -72,17 +72,12 @@ class BreadController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
         return view('dashboard.form.show', [
             'form' => Form::find($id),
-            'formFields' => FormField::where('form_id', '=', $id)->get(),    
+            'formFields' => FormField::where('form_id', '=', $id)->get(),
         ]);
     }
 
@@ -101,7 +96,7 @@ class BreadController extends Controller
             'formFields' => FormField::where('form_id', '=', $id)->get(),
             'options' => $formService->getFormOptions(),
             'roles'   => $rolesService->get(),
-            'formRoles' => $formService->getBreadRoles($id),    
+            'formRoles' => $formService->getBreadRoles($id),
         ]);
     }
 

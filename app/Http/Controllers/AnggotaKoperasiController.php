@@ -3,15 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Koperasi\AnggotaKoperasi;
+use App\Http\Requests\StoreAnggotaRequest;
 
+use App\Models\Koperasi\AnggotaKoperasi;
+use Spatie\Permission\Models\Permission;
+use RealRashid\SweetAlert\Facades\Alert;
 class AnggotaKoperasiController extends Controller
 {
 
     public function index()
     {
-        $anggota = AnggotaKoperasi::all(['kode','nama','departemen','bagian']);
-        return view('dashboard.koperasi.index', compact('anggota'));
+        $anggota = AnggotaKoperasi::get(['id','kode','nama','departemen','bagian']);
+        return view('dashboard.cms_admin.koperasi.anggota.index',compact('anggota'));
     }
 
     /**
@@ -21,7 +24,7 @@ class AnggotaKoperasiController extends Controller
      */
     public function create()
     {
-        return view('dashboard.koperasi.create');
+        return view('dashboard.cms_admin.koperasi.anggota.create');
     }
 
     /**
@@ -30,8 +33,9 @@ class AnggotaKoperasiController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreAnggotaRequest $request)
     {
+        // dd($request->all());
         $anggota = new AnggotaKoperasi;
         $anggota->kode = $request->kode;
         $anggota->nama = $request->nama;
@@ -39,7 +43,8 @@ class AnggotaKoperasiController extends Controller
         $anggota->bagian = $request->bagian;
         $anggota->save();
 
-        return redirect()->route('/anggota-koperasi');
+        Alert::success("Berhasil", "Anggota $request->nama Berhasil dibuat");
+        return redirect()->route('anggota-koperasi.index');
     }
 
     /**
@@ -59,9 +64,10 @@ class AnggotaKoperasiController extends Controller
      * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
      * @return \Illuminate\Http\Response
      */
-    public function edit(AnggotaKoperasi $anggotaKoperasi)
+    public function edit($id)
     {
-        //
+        $result = AnggotaKoperasi::findOrFail($id);
+        return view('dashboard.cms_admin.koperasi.anggota.edit',compact('result'));
     }
 
     /**
@@ -71,9 +77,12 @@ class AnggotaKoperasiController extends Controller
      * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AnggotaKoperasi $anggotaKoperasi)
+    public function update(Request $request, $id)
     {
-        //
+        // dd($request->all());
+        AnggotaKoperasi::find($id)->update($request->all());
+        Alert::success("Berhasil", "Data Anggota $request->nama Berhasil dirubah");
+        return redirect()->route('anggota-koperasi.index');
     }
 
     /**
@@ -82,8 +91,12 @@ class AnggotaKoperasiController extends Controller
      * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AnggotaKoperasi $anggotaKoperasi)
+   public function destroy($id, Request $request)
     {
-        //
+        AnggotaKoperasi::findOrFail($id)->delete();
+        Alert::success("Berhasil", "Data Anggota $request->nama Berhasil dihapus");
+        return redirect()->route('anggota-koperasi.index');
+
+
     }
 }
