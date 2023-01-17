@@ -12,20 +12,20 @@ class AnggotaKoperasi extends Model
     protected $guarded = [];
 
     public function simpanan_wajibs(){
-        return $this->hasMany('App\SimpananWajib');
+        return $this->hasMany('App\Models\Koperasi\SimpananWajib','anggota_id');
     }
 
-    public function pinjaman_usps(){
-        return $this->hasMany('App\Models\Koperasi\PinjamanUsp');
+    public function usps(){
+        return $this->hasMany('App\Models\Koperasi\PinjamanUsp','anggota_id');
     }
 
-    public function pinjaman_emergensis(){
-        return $this->hasMany('App\Models\Koperasi\PinjamanEmergensi');
+    public function emergensis(){
+        return $this->hasMany('App\Models\Koperasi\PinjamanEmergensi','anggota_id');
     }
 
-    public function pinjaman_konsumsis()
+    public function konsumsis()
     {
-        return $this->hasMany('App\Models\Koperasi\PinjamanKonsumsi');
+        return $this->hasMany('App\Models\Koperasi\PinjamanKonsumsi','anggota_id');
     }
 
     public function pembayarans(){

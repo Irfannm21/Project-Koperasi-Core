@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Koperasi;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,6 +16,6 @@ class PinjamanUsp extends Model
     }
 
     public function anggota(){
-        return $this->belongsTo('App\Models\Koperasi\Anggota');
+        return $this->belongsTo('App\Models\Koperasi\AnggotaKoperasi');
     }
 }

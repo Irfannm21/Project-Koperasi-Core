@@ -22,7 +22,7 @@ class CreatePinjamanUspsTable extends Migration
             $table->bigInteger('cicilan');
             $table->timestamps();
 
-            $table->foreign('anggota_id')->references('id')->on('anggotas_koperasis');
+            $table->foreign('anggota_id')->references('id')->on('anggota_koperasis');
         });
     }
 
