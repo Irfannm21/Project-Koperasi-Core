@@ -2,7 +2,7 @@
 
 
 Route::group(['middleware' => ['get.menu']], function () {
-    Route::get('/', function () {           return view('dashboard.homepage'); });
+    Route::get('/', function () {           return view('dashboard.homepage'); }); Route::resource('/simpanan-wajib', 'SimpananWajibController');
 
     Route::group(['middleware' => ['role:user']], function () {
         Route::get('/colors', function () {     return view('dashboard.colors'); });
@@ -68,6 +68,9 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::resource('roles',        'RolesController');
         Route::resource('mail',        'MailController');
         Route::resource('/anggota-koperasi',        'AnggotaKoperasiController');
+        Route::resource('/simpanan-wajib', 'SimpananWajibController');
+        Route::resource('/usp', 'PinjamanUspController');
+        Route::Resource('/pembayaran', 'PembayaranController');
         Route::get('prepareSend/{id}',        'MailController@prepareSend')->name('prepareSend');
         Route::post('mailSend/{id}',        'MailController@send')->name('mailSend');
         Route::get('/roles/move/move-up',      'RolesController@moveUp')->name('roles.up');

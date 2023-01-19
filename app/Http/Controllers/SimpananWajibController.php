@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SimpananWajib;
+use App\Models\Koperasi\SimpananWajib;
 use Illuminate\Http\Request;
 
 class SimpananWajibController extends Controller
@@ -14,7 +14,8 @@ class SimpananWajibController extends Controller
      */
     public function index()
     {
-        //
+        $results = SimpananWajib::all();
+        return view('dashboard.cms_admin.koperasi.simpanan-wajib.index',compact('results'));
     }
 
     /**
@@ -24,7 +25,7 @@ class SimpananWajibController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.cms_admin.koperasi.simpanan-wajib.create');
     }
 
     /**

@@ -17,12 +17,11 @@ class PinjamanUspTableSeeder extends Seeder
     {
         $anggota = AnggotaKoperasi::find(1);
 
-        $usp = new PinjamanUsp;
-        $usp->tanggal = '2023-01-01';
-        $usp->jumlah = 2000000;
-        $usp->tenor = 2;
-        $usp->cicilan = 1120000;
-
-        $anggota->usps()->save($usp);
+        $anggota->usps()->update([
+            "tanggal" => '2022-10-10',
+            "jumlah" => 2000000,
+            "tenor" => 4,
+            "cicilan" => 500000
+        ]);
     }
 }

@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pembayaran;
+use App\Models\Koperasi\Pembayaran;
+use App\Models\Koperasi\AnggotaKoperasi;
+use App\Models\Koperasi\PinjamanUsp;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PembayaranController extends Controller
 {
@@ -14,7 +17,8 @@ class PembayaranController extends Controller
      */
     public function index()
     {
-        //
+        $result = Pembayaran::all();
+        return view('dashboard.cms_admin.koperasi.pembayaran.index',compact('result'));
     }
 
     /**
@@ -24,7 +28,8 @@ class PembayaranController extends Controller
      */
     public function create()
     {
-        //
+        $anggotas = PinjamanUsp::has('anggota')->get();
+        return view('dashboard.cms_admin.koperasi.pembayaran.create',compact('anggotas'));
     }
 
     /**
@@ -35,7 +40,15 @@ class PembayaranController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $usp = PinjamanUsp::find($request->kode);
+        $usp->pembayarans()->createMany([
+            [
+                "tanggal"  => $request->tanggal,
+                "jumlah" => $request->jumlah
+            ]
+            ]);
+        Alert::success("Berhasil", "Pembayaran USP dengan Nama " . $usp->anggota->nama . " Telah ditambahkan.");
+        return redirect()->route('pembayaran.index');
     }
 
     /**
