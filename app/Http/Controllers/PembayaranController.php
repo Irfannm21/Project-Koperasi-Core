@@ -26,7 +26,7 @@ class PembayaranController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $anggotas = PinjamanUsp::has('anggota')->get();
         return view('dashboard.cms_admin.koperasi.pembayaran.create',compact('anggotas'));
@@ -70,7 +70,9 @@ class PembayaranController extends Controller
      */
     public function edit(Pembayaran $pembayaran)
     {
-        //
+        // dd($pembayaran->pembayaranable());
+        $result = $pembayaran;
+        return view('dashboard.cms_admin.koperasi.pembayaran.edit',compact('result'));
     }
 
     /**
@@ -82,7 +84,13 @@ class PembayaranController extends Controller
      */
     public function update(Request $request, Pembayaran $pembayaran)
     {
-        //
+        // dd($pembayaran->pembayaranable->anggota->nama);
+        $pembayaran->update([
+            'tanggal' => $request->tanggal,
+            'jumlah' => $request->jumlah
+        ]);
+        Alert::success("Berhasil", "Data USP dengan Nama " . $pembayaran->pembayaranable->anggota->nama . " Telah diubah.");
+        return redirect()->route('pembayaran.index');
     }
 
     /**
@@ -93,6 +101,8 @@ class PembayaranController extends Controller
      */
     public function destroy(Pembayaran $pembayaran)
     {
-        //
+        $pembayaran->delete();
+        Alert::success("Berhasil", "Data USP dengan Nama " . $pembayaran->pembayaranable->anggota->nama . " Telah dihapus.");
+        return redirect()->route('pembayaran.index');
     }
 }

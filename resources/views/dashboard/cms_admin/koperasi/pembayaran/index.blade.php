@@ -57,8 +57,8 @@
                                                     </td>
                                                     <td>{{$item->jumlah ?? ''}}</td>
                                                     <td>
-                                                        <a href="{{route('anggota-koperasi.edit', $item->id)}}" class="btn btn-xs btn-primary">Ubah</a>
-                                                        <form action="{{route('anggota-koperasi.destroy',$item->id)}}" method="POST" style="display: inline-block;">
+                                                        <a href="{{route('pembayaran.edit', $item->id)}}" class="btn btn-xs btn-primary">Ubah</a>
+                                                        <form action="{{route('pembayaran.destroy',$item->id)}}" method="POST" style="display: inline-block;">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button class="btn btn-xs btn-danger">Hapus</button>

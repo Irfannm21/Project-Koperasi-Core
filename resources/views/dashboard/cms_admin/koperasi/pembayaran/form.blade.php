@@ -8,7 +8,7 @@
     <div class="col-md-4">
         <select name="kode" id="kode" class="form-control">
             @if (isset($result))
-                {{-- <option value="{{$result->id}}" selected>{{$result->anggota->kode . " | " . $result->anggota->nama}}</option> --}}
+                <option value="{{$result->id}}" selected>{{$result->pembayaranable->anggota->kode . " | " . $result->pembayaranable->anggota->nama }}</option>
             @else
             <option value="" selected>-- Pilih --</option>
             @foreach ($anggotas as $item)
@@ -28,7 +28,7 @@
         <label for="">Tanggal</label>
     </div>
     <div class="col-md-4">
-        <input type="date" name="tanggal" class="form-control" >
+        <input type="date" name="tanggal" class="form-control" value="{{old('tanggal') ?? $result->tanggal ?? '' }}">
         @error('tanggal')
         <span class="help-block">This is a help text</span>
         @enderror
