@@ -39,7 +39,7 @@
                                         <tbody>
                                             @foreach ($results as $item)
                                             <tr>
-                                                <td>{{$item->anggota->kode}}</td>
+                                                <td>{{$item->anggota->kode . " | " . $item->anggota->nama}}</td>
                                                 <td>{{date('M y', strtotime($item->tanggal))}}</td>
                                                 <td>Rp. {{number_format($item->jumlah_simpanan,0,",",".")}}</td>
                                                 <td>

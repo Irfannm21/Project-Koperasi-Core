@@ -11,7 +11,7 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::get('/widgets', function () {    return view('dashboard.widgets'); });
         Route::get('/404', function () {        return view('dashboard.404'); });
         Route::get('/500', function () {        return view('dashboard.500'); });
-        Route::prefix('base')->group(function () {
+        Route::prefix('baseme')->group(function () {
             Route::get('/breadcrumb', function(){   return view('dashboard.base.breadcrumb'); });
             Route::get('/cards', function(){        return view('dashboard.base.cards'); });
             Route::get('/carousel', function(){     return view('dashboard.base.carousel'); });
@@ -67,9 +67,11 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::resource('users',        'UsersController')->except( ['create', 'store'] );
         Route::resource('roles',        'RolesController');
         Route::resource('mail',        'MailController');
+        Route::get('/anggota-koperasi/show',        'AnggotaKoperasiController@show');
         Route::resource('/anggota-koperasi',        'AnggotaKoperasiController');
         Route::resource('/simpanan-wajib', 'SimpananWajibController');
         Route::resource('/usp', 'PinjamanUspController');
+        Route::get('/pembayaran/cari-jenis', 'PembayaranController@cariJenis')->name('cari-jenis');
         Route::Resource('/pembayaran', 'PembayaranController');
         Route::get('prepareSend/{id}',        'MailController@prepareSend')->name('prepareSend');
         Route::post('mailSend/{id}',        'MailController@send')->name('mailSend');

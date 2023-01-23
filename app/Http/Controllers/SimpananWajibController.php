@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Koperasi\SimpananWajib;
+use App\Models\Koperasi\AnggotaKoperasi;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class SimpananWajibController extends Controller
 {
@@ -36,9 +39,35 @@ class SimpananWajibController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        // dd($request->tipe);
+        switch ($request->tipe) {
+            case 'Marketing':
+                $results = AnggotaKoperasi::select('id')->where('departemen',"Marketing")->get();
+                break;
+                case 'Engineering':
+                    break;
+                    $results = AnggotaKoperasi::select('id')->where('departemen',"Engineering")->get();
+                    case 'IT':
+                        $results = AnggotaKoperasi::select('id')->where('bagian',"IT")->get();
+                        break;
+                        case 'Administrasi':
+                            $results = AnggotaKoperasi::select('id')->where('bagian',"Administrasi")->get();
+                            break;
+            default:
+            $results = AnggotaKoperasi::all();
+                break;
+        }
 
+        foreach($results as $val) {
+            $item = new SimpananWajib;
+            $item->tanggal = $request->tanggal;
+            $item->jumlah_simpanan = $request->jumlah;
+
+            $val->simpanan_wajibs()->save($item);
+        }
+        Alert::success("Berhasil", "Simpanan Wajib Telah ditambahkan.");
+        return redirect()->route('simpanan-wajib.index');
+    }
     /**
      * Display the specified resource.
      *

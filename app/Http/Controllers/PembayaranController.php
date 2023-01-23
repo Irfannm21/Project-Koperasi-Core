@@ -105,4 +105,8 @@ class PembayaranController extends Controller
         Alert::success("Berhasil", "Data USP dengan Nama " . $pembayaran->pembayaranable->anggota->nama . " Telah dihapus.");
         return redirect()->route('pembayaran.index');
     }
+
+    public function cariJenis(Request $request) {
+        return $request->nama;
+    }
 }
