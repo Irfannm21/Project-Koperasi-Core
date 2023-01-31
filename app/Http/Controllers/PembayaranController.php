@@ -107,6 +107,6 @@ class PembayaranController extends Controller
     }
 
     public function cariJenis(Request $request) {
-        return $request->nama;
+        return "Engineering";
     }
 }

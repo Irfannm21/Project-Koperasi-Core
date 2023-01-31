@@ -48,14 +48,26 @@
                                 {{-- @include('dashboard.cms_admin.koperasi.pembayaran.form') --}}
                                 <div class="form-group row">
                                     <div class="col-md-3">
-                                        <label for="">Jenis Pinjaman</label>
+                                        <label for="" id="labelJenis">Plih Departemen</label>
                                     </div>
                                     <div class="col-md-4">
-                                        <select name="jenis" id="jenis" class="form-control">
+                                        <select name="departemen" id="departemen" class="form-control">
                                             <option value="">-- Pilih --</option>
-                                            <option value="EUSP">USP</option>
-                                            <option value="EEME">Emergensi</option>
-                                            <option value="KONS">Konsumsi</option>
+                                            <option value="Engineering" id="Engineering">Engineering</option>
+                                            <option value="Marketing" id="Marketing">Marketing</option>
+                                        </select>
+                                        @error('jumlah')
+                                            <span class="help-block">This is a help text</span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <label for="" id="labelJenis">Nama Karyawan</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select name="nama" id="nama" class="form-control">
+
                                         </select>
                                         @error('jumlah')
                                             <span class="help-block">This is a help text</span>
@@ -64,6 +76,7 @@
                                 </div>
 
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -73,30 +86,25 @@
     </div>
 
 
-@section('script')
-    <script>
-        $(document).ready(function() {
-            $(document).on('change', '#jenis', function() {
-                $.ajax({
-                    method: "GET",
-                    url: '{{ url('/pembayaran/cari-jenis') }}',
-                    data: {
-                        nama: $(this).val()
-                    },
-                    success: function(response) {
-                        console.log(204, response);
-                        for (let item of response) {
-
-                        }
-                    }
-                })
-            })
-        })
-    </script>
-@endsection
-
-
 @endsection
 
 @section('javascript')
+<script>
+    var labelNode = document.getElementById('labelJenis');
+    var selectNode = document.getElementById('departemen')
+    var selectENGNode = document.getElementById('Engineering')
+    var selectMARNode = document.getElementById('Marketing')
+    var selectKaryawan = document.getElementById('nama')
+
+    const pilih = () => {
+        let request = new XMLHttpRequest();
+        request.open("GET", "{{ url('pembayaran/cari-jenis') }}", false);
+        request.send();
+        selectNode.innerHtml = request.responsText;
+    }
+
+    console.log(selectNode)
+
+    selectNode.addEventListener("change", pilih)
+</script>
 @endsection

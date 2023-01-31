@@ -86,6 +86,9 @@
     <!-- CoreUI and necessary plugins-->
     <script src="{{ asset('js/coreui.bundle.min.js') }}"></script>
     <script src="{{ asset('js/coreui-utils.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>console.log(91, $, 'jquery')</script>
     @yield('javascript')
 
 

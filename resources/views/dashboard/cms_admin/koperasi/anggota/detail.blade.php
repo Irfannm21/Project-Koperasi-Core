@@ -27,7 +27,7 @@
                   <div class="form-group row">
                     <div class="col-md-3">
                         <label for="">Nama</label>
-                    </div>
+                    </div>1
                     <div class="col-md-3">
                         <input type="text" value="Irfan" class="form-control" disabled>
                     </div>
