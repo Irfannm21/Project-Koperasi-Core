@@ -107,6 +107,6 @@ class PembayaranController extends Controller
     }
 
     public function cariJenis(Request $request) {
-        return "Engineering";
+        return AnggotaKoperasi::where("departemen",$request->n)->get();
     }
 }
