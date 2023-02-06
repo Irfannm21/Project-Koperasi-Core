@@ -123,35 +123,7 @@
     var hasilNode = document.getElementById('hasil')
     var karyawanNode = document.getElementById('data_karyawan');
 
-    var tipeNode = document.getElementById('tipe')
-    var anggotaNode = document.getElementById('anggota')
-    tipeNode.addEventListener("change", () => {
-        let request = new XMLHttpRequest();
-        request.open("GET", "{{ url('pembayaran/tipe-pinjaman?tipe=')}}"+tipeNode.value, false);
-        request.send();
 
-        var json = JSON.parse(request.response);
-
-        // console.log(json[0].nama);
-        let opt = "";
-        opt += "<option selected>-- Pilih -- </option>";
-        json.forEach(function(person) {
-            opt += "<option>"+person.anggota.nama+"</option>";
-        })
-        anggotaNode.innerHTML = opt;
-
-        console.log(105, JSON.parse(request.response),  )
-    })
-
-    // anggotaNode.addEventListener("change", () => {
-    //     let request = new XMLHttpRequest();
-
-    //     request.open("GET", "{{ url('pembayaran/cari-id-pinjaman?nama=')}}"+anggotaNode.value, false);
-    //     request.send();
-
-    //     console.log(anggotaNode.value);
-    //     console.log(105, JSON.parse(request.response),  )
-    // })
 
     var metodeNode = document.getElementById('metode')
     var dept_toggle = document.getElementById('departemen_toggle');
@@ -177,6 +149,54 @@
 
         console.log(105, JSON.parse(request.response),  )
     })
+
+
+    var tipeNode = document.getElementById('tipe')
+    var anggotaNode = document.getElementById('anggota')
+    tipeNode.addEventListener("change", () => {
+        let request = new XMLHttpRequest();
+        request.open("GET", "{{ url('pembayaran/tipe-pinjaman?tipe=')}}"+tipeNode.value, false);
+        request.send();
+
+        var json = JSON.parse(request.response);
+
+        // console.log(json[0].nama);
+        let opt = "";
+        opt += "<option selected>-- Pilih -- </option>";
+        json.forEach(function(person) {
+            opt += "<option value="+person.anggota_id+">"+person.anggota.nama+"</option>";
+        })
+
+        anggotaNode.innerHTML = opt;
+
+
+        console.log(105, JSON.parse(request.response),  )
+    })
+
+    anggotaNode.addEventListener("change", () => {
+        let request = new XMLHttpRequest();
+
+        request.open("GET", "{{ url('pembayaran/cari-anggota?cari=')}}"+anggotaNode.value, false);
+        request.send();
+
+
+        console.log(105, JSON.parse(request.response),  )
+    });
+
+    // anggotaNode.addEventListener("change", () => {
+    //     let request = new XMLHttpRequest();
+
+    //     request.open("GET", "{{ url('pembayaran/cari-id-pinjaman?tipe=')}}"+anggotaNode.value, false);
+    //     request.send();
+
+    //     // console.log(data);
+    //     // console.log("Jenis Pinjamannya"+tipeNode.value)
+    //     console.log("ID USPNYA"+anggotaNode.value);
+
+    //     console.log(105, JSON.parse(request.response),  )
+    // })
+
+
 
 
 

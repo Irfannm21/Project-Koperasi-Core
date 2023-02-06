@@ -55,7 +55,8 @@ class AnggotaKoperasiController extends Controller
      */
     public function show(AnggotaKoperasi $anggotaKoperasi)
     {
-         return view('dashboard.cms_admin.koperasi.anggota.detail');
+        $results = AnggotaKoperasi::all();
+         return view('dashboard.cms_admin.koperasi.anggota.detail', compact('results'));
     }
 
     /**
