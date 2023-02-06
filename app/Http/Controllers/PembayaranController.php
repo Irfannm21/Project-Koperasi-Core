@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Koperasi\Pembayaran;
 use App\Models\Koperasi\AnggotaKoperasi;
 use App\Models\Koperasi\PinjamanUsp;
+use App\Models\Koperasi\PinjamanKonsumsi;
+use App\Models\Koperasi\PinjamanEmergensi;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -93,12 +95,6 @@ class PembayaranController extends Controller
         return redirect()->route('pembayaran.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Pembayaran  $pembayaran
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Pembayaran $pembayaran)
     {
         $pembayaran->delete();
@@ -106,7 +102,31 @@ class PembayaranController extends Controller
         return redirect()->route('pembayaran.index');
     }
 
+    public function tipePinjaman(Request $request) {
+        if($request->tipe == "PinjamanUsp") {
+            return AnggotaKoperasi::has('usps')->get();
+        } elseif($request->tipe == "PinjamanEmergensi") {
+            return AnggotaKoperasi::has('emergensis')->get();
+        } else {
+            return AnggotaKoperasi::has('konsumsis')->get();
+        }
+    }
+
+    public function namaPinjaman(Request $request) {
+        if($request->tipe == "PinjamanUsp") {
+            return AnggotaKoperasi::has('usps')->get();
+        } elseif($request->tipe == "PinjamanEmergensi") {
+            return AnggotaKoperasi::has('emergensis')->get();
+        } else {
+            return AnggotaKoperasi::has('konsumsis')->get();
+        }
+    }
+
     public function cariJenis(Request $request) {
         return AnggotaKoperasi::where("departemen",$request->n)->get();
+    }
+
+    public function idPeminjam(Request $request) {
+        return $request->all();
     }
 }
