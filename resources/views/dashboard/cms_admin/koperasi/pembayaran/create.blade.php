@@ -132,27 +132,26 @@
 
         var json = JSON.parse(request.response);
 
+        // console.log(json[0].nama);
         let opt = "";
-        for(const value of json) {
-            opt += "<option>"+value["nama"]+"</option>";
-        }
+        opt += "<option selected>-- Pilih -- </option>";
+        json.forEach(function(person) {
+            opt += "<option>"+person.anggota.nama+"</option>";
+        })
         anggotaNode.innerHTML = opt;
-
-        // console.log(anggotaNode.value)
-        // console.log(105, JSON.parse(request.response),  )
-    })
-
-    anggotaNode.addEventListener("change", () => {
-        let request = new XMLHttpRequest();
-        var data = {
-            tipe : tipeNode.value,
-            nama : anggotaNode.value
-        }
-        request.open("GET", "{{ url('pembayaran/cari-id-pinjaman?nama=')}}"+data, false);
-        request.send();
 
         console.log(105, JSON.parse(request.response),  )
     })
+
+    // anggotaNode.addEventListener("change", () => {
+    //     let request = new XMLHttpRequest();
+
+    //     request.open("GET", "{{ url('pembayaran/cari-id-pinjaman?nama=')}}"+anggotaNode.value, false);
+    //     request.send();
+
+    //     console.log(anggotaNode.value);
+    //     console.log(105, JSON.parse(request.response),  )
+    // })
 
     var metodeNode = document.getElementById('metode')
     var dept_toggle = document.getElementById('departemen_toggle');
@@ -175,7 +174,6 @@
         // hasilNode.innerHtml = request.responseText;
 
         selectNode.innerHtml = request.responseText;
-
 
         console.log(105, JSON.parse(request.response),  )
     })

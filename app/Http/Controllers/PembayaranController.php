@@ -104,21 +104,21 @@ class PembayaranController extends Controller
 
     public function tipePinjaman(Request $request) {
         if($request->tipe == "PinjamanUsp") {
-            return AnggotaKoperasi::has('usps')->get();
+            return PinjamanUsp::with('anggota')->get();
         } elseif($request->tipe == "PinjamanEmergensi") {
-            return AnggotaKoperasi::has('emergensis')->get();
+            return PinjamanEmergensi::with('anggota')->get();
         } else {
-            return AnggotaKoperasi::has('konsumsis')->get();
+            return PinjamanKoperasi::with('anggota')->get();
         }
     }
 
     public function namaPinjaman(Request $request) {
         if($request->tipe == "PinjamanUsp") {
-            return AnggotaKoperasi::has('usps')->get();
+            return PinjamanUsp::with('anggota')->get();
         } elseif($request->tipe == "PinjamanEmergensi") {
-            return AnggotaKoperasi::has('emergensis')->get();
+            return PinjamanEmergensi::with('anggota')->get();
         } else {
-            return AnggotaKoperasi::has('konsumsis')->get();
+            return PinjamanKoperasi::with('anggota')->get();
         }
     }
 
@@ -127,6 +127,6 @@ class PembayaranController extends Controller
     }
 
     public function idPeminjam(Request $request) {
-        return $request->all();
+        return $request->tipe;
     }
 }
