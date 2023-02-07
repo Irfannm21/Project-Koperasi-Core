@@ -10,6 +10,7 @@ use App\Models\Koperasi\PinjamanEmergensi;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
+
 class PembayaranController extends Controller
 {
     /**
@@ -19,7 +20,7 @@ class PembayaranController extends Controller
      */
     public function index()
     {
-        $result = Pembayaran::all();
+        $result = Pembayaran::orderBy("created_at","DESC")->get();
         return view('dashboard.cms_admin.koperasi.pembayaran.index',compact('result'));
     }
 
@@ -42,13 +43,16 @@ class PembayaranController extends Controller
      */
     public function store(Request $request)
     {
-        $usp = PinjamanUsp::find($request->kode);
+        // dd($request->all());
+        $usp = PinjamanUsp::find($request->anggota);
+        for($i=1; $i<=$request->bayar; $i++) {
         $usp->pembayarans()->createMany([
-            [
-                "tanggal"  => $request->tanggal,
-                "jumlah" => $request->jumlah
-            ]
+                [
+                    "tanggal"  => $request->tanggal,
+                    "jumlah" => $usp->cicilan
+                ],
             ]);
+        }
         Alert::success("Berhasil", "Pembayaran USP dengan Nama " . $usp->anggota->nama . " Telah ditambahkan.");
         return redirect()->route('pembayaran.index');
     }
@@ -113,7 +117,7 @@ class PembayaranController extends Controller
     }
 
     public function cariAnggota(Request $request) {
-
+        return PinjamanUsp::find($request->cari);
     }
 
     public function cariJenis(Request $request) {

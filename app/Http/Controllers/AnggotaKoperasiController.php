@@ -55,7 +55,7 @@ class AnggotaKoperasiController extends Controller
      */
     public function show(AnggotaKoperasi $anggotaKoperasi)
     {
-        $results = AnggotaKoperasi::all();
+        $results = AnggotaKoperasi::all(wmz);
          return view('dashboard.cms_admin.koperasi.anggota.detail', compact('results'));
     }
 

@@ -17,89 +17,7 @@
                         <div class="card-body">
                             <form method="POST" action="{{ route('pembayaran.store') }}">
                                 @csrf
-                                {{-- @include('dashboard.cms_admin.koperasi.pembayaran.form') --}}
-
-                                <div class="form-group row">
-                                    <div class="col-md-3">
-                                        <label for="">Metode Pembayaran</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <select name="metode" id="metode" class="form-control">
-                                            <option value="" selected>-- Pilih --</option>
-                                            <option value="individu">Individu</option>
-                                            <option value="departemen">Kelompok</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <div class="col-md-3">
-                                        <label for="">Tipe Pinjaman</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <select name="tipe" id="tipe" class="form-control">
-                                            <option value="" selected>-- Pilih --</option>
-                                            <option value="PinjamanUsp">USP</option>
-                                            <option value="PinjamanEmergensi">Emergensi</option>
-                                            <option value="PinjamanKonsumsi">Konsumsi</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row" id="departemen_toggle" hidden>
-                                    <div class="col-md-3">
-                                        <label for="" id="labelJenis">Plih Departemen</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <select name="departemen" id="departemen" class="form-control">
-                                            <option value="">-- Pilih --</option>
-                                            <option value="Engineering" id="Engineering">Engineering</option>
-                                            <option value="Marketing" id="Marketing">Marketing</option>
-                                        </select>
-                                        @error('jumlah')
-                                            <span class="help-block">This is a help text</span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="form-group row" id="anggota_toggle" hidden>
-                                    <div class="col-md-3">
-                                        <label for="">Pilih Anggota</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <select name="anggota" id="anggota" class="form-control">
-
-                                        </select>
-                                        @error('kode')
-                                       <span class="invalid-feedback" role="alert">
-                                            {{$message}}
-                                       </span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-3">
-                                        <label for="">Tanggal Pembayaran</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="date" class="form-control" id="tanggal">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-3">
-                                        <label for="">Jumlah Bayar</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <select name="bayar" id="bayar" class="form-control">
-                                            <option value="" selected>-- Pilih --</option>
-                                            <option value="">1x 200000</option>
-                                            <option value="">2x 400000</option>
-                                            <option value="">3x 600000</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-primary" type="submit">Save</button>
-
+                                @include('dashboard.cms_admin.koperasi.pembayaran.form')
                             </form>
 
                         </div>
@@ -164,7 +82,7 @@
         let opt = "";
         opt += "<option selected>-- Pilih -- </option>";
         json.forEach(function(person) {
-            opt += "<option value="+person.anggota_id+">"+person.anggota.nama+"</option>";
+            opt += "<option value="+person.id+">"+person.anggota.nama+"</option>";
         })
 
         anggotaNode.innerHTML = opt;
@@ -173,13 +91,30 @@
         console.log(105, JSON.parse(request.response),  )
     })
 
+    var bayarNode = document.getElementById('bayar')
     anggotaNode.addEventListener("change", () => {
         let request = new XMLHttpRequest();
+        var data = {
+            id : anggotaNode.value,
+            tipe : tipeNode.value
+        }
 
         request.open("GET", "{{ url('pembayaran/cari-anggota?cari=')}}"+anggotaNode.value, false);
         request.send();
 
+        var json = JSON.parse(request.response)
 
+        var jumlah = json.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+        var opt = "";
+        for($i=1; $i<=json.tenor; $i++){
+            var bayar = json.cicilan*$i;
+                bayar = bayar.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+            opt += "<option value="+$i+">"+$i+"x "+bayar+"</option>";
+        }
+
+        bayarNode.innerHTML = opt;
+
+        console.log("ID USPNYA"+anggotaNode.value);
         console.log(105, JSON.parse(request.response),  )
     });
 
@@ -191,7 +126,6 @@
 
     //     // console.log(data);
     //     // console.log("Jenis Pinjamannya"+tipeNode.value)
-    //     console.log("ID USPNYA"+anggotaNode.value);
 
     //     console.log(105, JSON.parse(request.response),  )
     // })

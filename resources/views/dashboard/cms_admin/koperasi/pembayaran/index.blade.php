@@ -40,7 +40,7 @@
                                         <tbody>
                                             @foreach ($result as $item)
                                                 <tr>
-                                                    <td>{{$item->tanggal ?? ''}}</td>
+                                                    <td>{{date('m-Y',strtotime($item->tanggal)) ?? ''}}</td>
                                                     <td>
                                                         @if ($item->pembayaranable_type == "App\Models\Koperasi\PinjamanUsp")
                                                             USP
@@ -55,7 +55,7 @@
                                                         Emergensi
                                                     @endif
                                                     </td>
-                                                    <td>{{$item->jumlah ?? ''}}</td>
+                                                    <td>Rp. {{number_format($item->jumlah,2,",",".") ?? ''}}</td>
                                                     <td>
                                                         <a href="{{route('pembayaran.edit', $item->id)}}" class="btn btn-xs btn-primary">Ubah</a>
                                                         <form action="{{route('pembayaran.destroy',$item->id)}}" method="POST" style="display: inline-block;">
