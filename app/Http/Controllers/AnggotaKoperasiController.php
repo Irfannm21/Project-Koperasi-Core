@@ -13,7 +13,7 @@ class AnggotaKoperasiController extends Controller
 
     public function index()
     {
-        $anggota = AnggotaKoperasi::get(['id','kode','nama','departemen','bagian']);
+        $anggota = AnggotaKoperasi::get(['id','kode']);
         return view('dashboard.cms_admin.koperasi.anggota.index',compact('anggota'));
     }
 

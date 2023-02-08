@@ -10,7 +10,7 @@
                 <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Daftar Anggota Koperasi</h4>
+                            <h4>Daftar Pembayaran</h4>
                         </div>
                         <div class="card-body">
                             @if (Session::has('message'))
@@ -52,7 +52,7 @@
                                                         @if ($item->pembayaranable_type == "App\Models\Koperasi\PinjamanUsp")
                                                         {{$item->pembayaranable->anggota->nama}}
                                                     @elseif ($item->pembayaranable_type == "App\Models\Koperasi\PinjamanEmergensi")
-                                                        Emergensi
+                                                        {{$item->pembayaranable->anggota->nama}}
                                                     @endif
                                                     </td>
                                                     <td>Rp. {{number_format($item->jumlah,2,",",".") ?? ''}}</td>

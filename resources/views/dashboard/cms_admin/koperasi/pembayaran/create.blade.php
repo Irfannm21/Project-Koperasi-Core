@@ -99,7 +99,7 @@
             tipe : tipeNode.value
         }
 
-        request.open("GET", "{{ url('pembayaran/cari-anggota?cari=')}}"+anggotaNode.value, false);
+        request.open("GET", "{{ url('pembayaran/cari-anggota?')}}"+new URLSearchParams(data).toString(), false);
         request.send();
 
         var json = JSON.parse(request.response)
@@ -108,8 +108,8 @@
         var opt = "";
         for($i=1; $i<=json.tenor; $i++){
             var bayar = json.cicilan*$i;
-                bayar = bayar.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
-            opt += "<option value="+$i+">"+$i+"x "+bayar+"</option>";
+                idr = bayar.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+            opt += "<option value="+bayar+">"+$i+"x "+idr+"</option>";
         }
 
         bayarNode.innerHTML = opt;

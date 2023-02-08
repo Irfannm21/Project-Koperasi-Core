@@ -44,15 +44,14 @@ class PembayaranController extends Controller
     public function store(Request $request)
     {
         // dd($request->all());
-        $usp = PinjamanUsp::find($request->anggota);
-        for($i=1; $i<=$request->bayar; $i++) {
+        $model = "App\Models\Koperasi\\".$request->tipe;
+        $usp = $model::find($request->anggota);
         $usp->pembayarans()->createMany([
                 [
                     "tanggal"  => $request->tanggal,
-                    "jumlah" => $usp->cicilan
+                    "jumlah" => $request->bayar
                 ],
             ]);
-        }
         Alert::success("Berhasil", "Pembayaran USP dengan Nama " . $usp->anggota->nama . " Telah ditambahkan.");
         return redirect()->route('pembayaran.index');
     }
@@ -76,8 +75,9 @@ class PembayaranController extends Controller
      */
     public function edit(Pembayaran $pembayaran)
     {
-        // dd($pembayaran->pembayaranable());
         $result = $pembayaran;
+        //    dd($pembayaran);
+
         return view('dashboard.cms_admin.koperasi.pembayaran.edit',compact('result'));
     }
 
@@ -90,10 +90,10 @@ class PembayaranController extends Controller
      */
     public function update(Request $request, Pembayaran $pembayaran)
     {
-        // dd($pembayaran->pembayaranable->anggota->nama);
+        dd($request->all());
         $pembayaran->update([
             'tanggal' => $request->tanggal,
-            'jumlah' => $request->jumlah
+            'jumlah' => $request->bayar
         ]);
         Alert::success("Berhasil", "Data USP dengan Nama " . $pembayaran->pembayaranable->anggota->nama . " Telah diubah.");
         return redirect()->route('pembayaran.index');
@@ -107,17 +107,13 @@ class PembayaranController extends Controller
     }
 
     public function tipePinjaman(Request $request) {
-        if($request->tipe == "PinjamanUsp") {
-            return PinjamanUsp::with('anggota')->get();
-        } elseif($request->tipe == "PinjamanEmergensi") {
-            return PinjamanEmergensi::with('anggota')->get();
-        } else {
-            return PinjamanKoperasi::with('anggota')->get();
-        }
+        $model = "App\Models\Koperasi\\".$request->tipe;
+        return $model::with('anggota')->get();
     }
 
     public function cariAnggota(Request $request) {
-        return PinjamanUsp::find($request->cari);
+        $model = "App\Models\Koperasi\\".$request->tipe;
+        return $model::find($request->id);
     }
 
     public function cariJenis(Request $request) {

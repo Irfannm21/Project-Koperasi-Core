@@ -1,3 +1,6 @@
+<?php
+    // dd($result->all());
+?>
 @extends('dashboard.base')
 
 @section('css')
@@ -12,7 +15,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="card">
-            <div class="card-header"><h4>Edit {{$result->nama}}</h4></div>
+            <div class="card-header"><h4>Edit <u>{{$result->pembayaranable->anggota->nama}}</u></h4></div>
               <div class="card-body">
                   {{-- @if(Session::has('message'))
                       <div class="alert alert-success" role="alert">{{ Session::get('message') }}</div>

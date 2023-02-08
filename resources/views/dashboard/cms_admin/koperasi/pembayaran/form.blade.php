@@ -1,3 +1,21 @@
+@isset($result)
+<div class="form-group row" id="anggota_toggle">
+    <div class="col-md-3">
+        <label for="">Pilih Anggota</label>
+    </div>
+    <div class="col-md-4">
+        <select name="anggota" id="anggota" class="form-control" disabled>
+                <option value="">{{$result->pembayaranable->anggota->nama}}</option>
+            </select>
+            @error('kode')
+       <span class="invalid-feedback" role="alert">
+            {{$message}}
+        </span>
+        @enderror
+    </div>
+</div>
+@endisset
+
 <div class="form-group row">
     <div class="col-md-3">
         <label for="">Metode Pembayaran</label>
@@ -5,11 +23,12 @@
     <div class="col-md-4">
         <select name="metode" id="metode" class="form-control">
             <option value="" selected>-- Pilih --</option>
-            <option value="individu">Individu</option>
+            <option value="individu" {{ (old('departemen') || isset($result)) ? 'selected' : ''}}>Individu</option>
             <option value="departemen">Kelompok</option>
         </select>
     </div>
 </div>
+
 
 <div class="form-group row">
     <div class="col-md-3">
@@ -18,9 +37,9 @@
     <div class="col-md-4">
         <select name="tipe" id="tipe" class="form-control">
             <option value="" selected>-- Pilih --</option>
-            <option value="PinjamanUsp">USP</option>
-            <option value="PinjamanEmergensi">Emergensi</option>
-            <option value="PinjamanKonsumsi">Konsumsi</option>
+            <option value="PinjamanUsp" {{ (old('departemen') || isset($result) ? $result->pembayaranable_type : '') == "App\Models\Koperasi\PinjamanUsp" ? 'selected' : ''}}>USP</option>
+            <option value="PinjamanEmergensi" {{ (old('departemen') || isset($result) ? $result->pembayaranable_type : '') == "App\Models\Koperasi\PinjamanEmergensi" ? 'selected' : ''}}>Emergensi</option>
+            <option value="PinjamanKonsumsi" {{ (old('departemen') || isset($result) ? $result->pembayaranable_type : '') == "App\Models\Koperasi\PinjamanKonsumsi" ? 'selected' : ''}}>Konsumsi</option>
         </select>
     </div>
 </div>
@@ -46,7 +65,9 @@
     </div>
     <div class="col-md-4">
         <select name="anggota" id="anggota" class="form-control">
-
+            @isset($result)
+                <option value="">{{$result->pembayaranable->anggota->nama}}</option>
+            @endisset
         </select>
         @error('kode')
        <span class="invalid-feedback" role="alert">
@@ -60,7 +81,7 @@
         <label for="">Tanggal Pembayaran</label>
     </div>
     <div class="col-md-4">
-        <input type="date" class="form-control" id="tanggal" name="tanggal">
+        <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{old('tanggal') ?? $result->tanggal ?? '' }}">
     </div>
 </div>
 <div class="form-group row">
@@ -69,7 +90,14 @@
     </div>
     <div class="col-md-4">
         <select name="bayar" id="bayar" class="form-control">
-
+            @isset($result)
+                @for ($i=1; $i <= $result->pembayaranable->tenor; $i++)
+                    <option value="{{$result->pembayaranable->cicilan*$i}}"
+                        {{ (old('jumlah') || isset($result) ? $result->jumlah : '') === $result->pembayaranable->cicilan*$i ? 'selected' : ''}}>
+                        {{$i . "x " . number_format($result->pembayaranable->cicilan*$i,2,",",".")}}
+                    </option>
+                @endfor
+            @endisset
         </select>
     </div>
 </div>
