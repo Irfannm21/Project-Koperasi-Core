@@ -1,5 +1,7 @@
-// window._ = require('lodash');
-// window.$ = require('jquery');
+require('datatables.net-bs4');
+require('datatables.net-buttons-bs4');
+require('datatables.net-select-bs4');
+require('datatables.net-searchpanes-bs4');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support

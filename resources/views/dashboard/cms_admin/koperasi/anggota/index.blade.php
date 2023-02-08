@@ -38,22 +38,7 @@
                                             <th>Aksi</th>
                                         </thead>
                                         <tbody>
-                                            @foreach ($anggota as $item)
-                                                <tr>
-                                                    <td>{{$item->kode ?? ''}}</td>
-                                                    <td>{{$item->nama ?? ''}}</td>
-                                                    <td>{{$item->departemen ?? ''}}</td>
-                                                    <td>{{$item->bagian ?? ''}}</td>
-                                                    <td>
-                                                        <a href="{{route('anggota-koperasi.edit', $item->id)}}" class="btn btn-xs btn-primary">Ubah</a>
-                                                        <form action="{{route('anggota-koperasi.destroy',$item->id)}}" method="POST" style="display: inline-block;">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button class="btn btn-xs btn-danger">Hapus</button>
-                                                        </form>
-                                                    </td>
-                                                </tr>
-                                            @endforeach
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -68,4 +53,7 @@
 @endsection
 
 @section('javascript')
+<script>
+
+</script>
 @endsection

@@ -79,6 +79,10 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "cropperjs": "^1.5.7",
+    "datatables.net-bs4": "^1.13.2",
+    "datatables.net-buttons-bs4": "^2.3.4",
+    "datatables.net-searchpanes-bs4": "^2.1.1",
+    "datatables.net-select-bs4": "^1.6.0",
     "jquery": "^3.6.3",
     "laravel-mix": "^5.0.4",
     "perfect-scrollbar": "1.5.0"

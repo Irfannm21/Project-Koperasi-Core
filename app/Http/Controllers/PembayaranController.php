@@ -90,7 +90,7 @@ class PembayaranController extends Controller
      */
     public function update(Request $request, Pembayaran $pembayaran)
     {
-        dd($request->all());
+        // dd($request->all());pp
         $pembayaran->update([
             'tanggal' => $request->tanggal,
             'jumlah' => $request->bayar

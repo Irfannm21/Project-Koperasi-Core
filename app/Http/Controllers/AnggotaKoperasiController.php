@@ -8,13 +8,29 @@ use App\Http\Requests\StoreAnggotaRequest;
 use App\Models\Koperasi\AnggotaKoperasi;
 use Spatie\Permission\Models\Permission;
 use RealRashid\SweetAlert\Facades\Alert;
+use DataTables;
+
+
+
 class AnggotaKoperasiController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $anggota = AnggotaKoperasi::get(['id','kode']);
-        return view('dashboard.cms_admin.koperasi.anggota.index',compact('anggota'));
+        if($request->ajax()) {
+            $data  = AnggotaKoperasi::all();
+            return Datatables::of($data)
+            ->addIndexColumn()
+            ->addColumn('action', function($row) {
+                $btn =  '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">View</a>';
+                return $btn;
+            })
+
+            ->rawColumns(['action'])
+            ->make(true);
+        }
+
+        return view('dashboard.cms_admin.koperasi.anggota.index');
     }
 
     /**
