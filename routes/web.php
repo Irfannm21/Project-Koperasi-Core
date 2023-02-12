@@ -68,6 +68,7 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::resource('roles',        'RolesController');
         Route::resource('mail',        'MailController');
         Route::get('/anggota-koperasi/show',        'AnggotaKoperasiController@show');
+        Route::get('/anggota-koperasi/cari',        'AnggotaKoperasiController@cariAnggota')->name('anggota-koperasi.cari');
         Route::resource('/anggota-koperasi',        'AnggotaKoperasiController');
         Route::resource('/simpanan-wajib', 'SimpananWajibController');
         Route::resource('/usp', 'PinjamanUspController');

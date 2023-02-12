@@ -17,38 +17,17 @@ class AnggotaKoperasiController extends Controller
 
     public function index(Request $request)
     {
-        if($request->ajax()) {
-            $data  = AnggotaKoperasi::all();
-            return Datatables::of($data)
-            ->addIndexColumn()
-            ->addColumn('action', function($row) {
-                $btn =  '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">View</a>';
-                return $btn;
-            })
+        $results = AnggotaKoperasi::get(['id','kode','nama','departemen','bagian']);
 
-            ->rawColumns(['action'])
-            ->make(true);
-        }
-
-        return view('dashboard.cms_admin.koperasi.anggota.index');
+        return view('dashboard.cms_admin.koperasi.anggota.index', compact('results'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('dashboard.cms_admin.koperasi.anggota.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(StoreAnggotaRequest $request)
     {
         // dd($request->all());
@@ -63,37 +42,20 @@ class AnggotaKoperasiController extends Controller
         return redirect()->route('anggota-koperasi.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(AnggotaKoperasi $anggotaKoperasi)
     {
-        $results = AnggotaKoperasi::all(wmz);
+        $results = AnggotaKoperasi::all();
          return view('dashboard.cms_admin.koperasi.anggota.detail', compact('results'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
         $result = AnggotaKoperasi::findOrFail($id);
         return view('dashboard.cms_admin.koperasi.anggota.edit',compact('result'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         // dd($request->all());
@@ -102,18 +64,14 @@ class AnggotaKoperasiController extends Controller
         return redirect()->route('anggota-koperasi.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\AnggotaKoperasi  $anggotaKoperasi
-     * @return \Illuminate\Http\Response
-     */
    public function destroy($id, Request $request)
     {
         AnggotaKoperasi::findOrFail($id)->delete();
         Alert::success("Berhasil", "Data Anggota $request->nama Berhasil dihapus");
         return redirect()->route('anggota-koperasi.index');
+    }
 
-
+    public function cariAnggota(request $request) {
+        return AnggotaKoperasi::with('simpanan_wajibs')->findOrFail($request->id);
     }
 }

@@ -19,10 +19,11 @@
                         <label for="">Cari Anggota</label>
                     </div>
                     <div class="col-md-3">
-                        <select name="" id="" class="form-control">
+                        <select name="" id="anggota" class="form-control">
+
                             <option value="" selected>-- Pilih --</option>
                             @foreach ($results as $item)
-                                <option value="">{{$item->nama}}</option>
+                                <option value="{{$item->id}}">{{$item->nama}}</option>
                             @endforeach
                         </select>
                     </div>
@@ -77,7 +78,7 @@
                         <label for="">Bagian</label>
                     </div>
                     <div class="col-md-3">
-                        <input type="text" id="nama" class="form-control" disabled>
+                        <input type="text" id="bagian" class="form-control" disabled>
                     </div>
                     <div class="col-md-2">
                         <label for="">Pinjaman Konsumsi</label>
@@ -87,14 +88,6 @@
                         <label for=""><u>Rp 782.000</u></label>
                     </div>
                   </div>
-              </div>
-              <div class="col-md-6">
-                  <table border="2px">
-                    <thead>
-                        <th>Bulan</th>
-                        <th>Jumlah</th>
-                    </thead>
-                  </table>
               </div>
             </div>
           </div>
@@ -107,6 +100,34 @@
 @endsection
 
 @section('javascript')
+<script>
+    var anggotaNode = document.getElementById('anggota')
+    var kodeNode = document.getElementById('kode')
+    var namaNode = document.getElementById('nama')
+    var departemenNode = document.getElementById('departemen')
+    var bagianNode = document.getElementById('bagian')
+    anggotaNode.addEventListener("change",() => {
+        let request = new XMLHttpRequest();
 
+        request.open("GET", "{{url('anggota-koperasi/cari?id=')}}"+anggotaNode.value, false)
+        request.send()
 
+        var json = JSON.parse(request.response);
+
+        kodeNode.setAttribute("value",json.kode)
+        namaNode.setAttribute("value",json.nama)
+        departemenNode.setAttribute("value",json.departemen)
+        bagianNode.setAttribute("value",json.bagian)
+        var sum = 0;
+        for (const object of json.simpanan_wajibs) {
+           var number = object.jumlah_simpanan
+            sum += number
+        }
+        // const sum = json.simpanan_wajibs.jumlah_simpanan;
+
+        console.log(number);
+        // console.log(json.simpanan_wajibs)
+        console.log(105, JSON.parse(request.response), )
+    })
+</script>
 @endsection
