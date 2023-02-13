@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-md-1">:</div>
                     <div class="col-md-3">
-                        <label for=""><u>Rp. 34.000.000</u></label>
+                        <label for="" id="total_simpanan"></label>
                     </div>
                   </div>
                   <div class="form-group row">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-md-1">:</div>
                     <div class="col-md-3">
-                        <label for=""><u>Lunas</u></label>
+                        <label for="" id="usp"></label>
                     </div>
                   </div>
                   <div class="form-group row">
@@ -91,6 +91,24 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-8">
+            <div class="card">
+                <div class="card-header"><h4>Daftar Simpanan Wajb</h4></div>
+                  <div class="card-body">
+                    <table class="table table-responsive-sm table-striped">
+                        <thead>
+                                <th>Nomor</th>
+                                <th>Tanggal</th>
+                                <th>jumlah</th>
+                                <th>Aksi</th>
+                        </thead>
+                        <tbody id="tb_wajib">
+
+                        </tbody>
+                        </table>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -106,6 +124,9 @@
     var namaNode = document.getElementById('nama')
     var departemenNode = document.getElementById('departemen')
     var bagianNode = document.getElementById('bagian')
+    var totalSimpananNode = document.getElementById('total_simpanan')
+    var wajibNode = document.getElementById("tb_wajib");
+    var uspNode = document.getElementById('usp')
     anggotaNode.addEventListener("change",() => {
         let request = new XMLHttpRequest();
 
@@ -113,21 +134,27 @@
         request.send()
 
         var json = JSON.parse(request.response);
+        const total_simpanan = json.anggota.simpanan_wajibs.reduce((n, {jumlah_simpanan}) => n + jumlah_simpanan, 0);
+        var total_cicilan = json.usp.pembayarans.reduce((n, {jumlah}) => n + jumlah, 0);
+        total_cicilan = total_cicilan / json.usp.te nor
 
-        kodeNode.setAttribute("value",json.kode)
-        namaNode.setAttribute("value",json.nama)
-        departemenNode.setAttribute("value",json.departemen)
-        bagianNode.setAttribute("value",json.bagian)
-        var sum = 0;
-        for (const object of json.simpanan_wajibs) {
-           var number = object.jumlah_simpanan
-            sum += number
-        }
-        // const sum = json.simpanan_wajibs.jumlah_simpanan;
+        kodeNode.setAttribute("value",json.anggota.kode)
+        namaNode.setAttribute("value",json.anggota.nama)
+        departemenNode.setAttribute("value",json.anggota.departemen)
+        bagianNode.setAttribute("value",json.anggota.bagian)
+        totalSimpananNode.innerHTML = total_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+        uspNode.innerHTML = total_cicilan
+        // var opt = "";
+        // json.simpanan_wajibs.forEach(element => {
+        //     opt += "<tr>";
+        //     opt += "<td>"+element.tanggal+"</td>";
+        //     wajibNode.innerHTML += "<td>"+element.tanggal+"</td>";
+        //     opt += "</tr>";
+        // });
 
-        console.log(number);
-        // console.log(json.simpanan_wajibs)
-        console.log(105, JSON.parse(request.response), )
+        // wajibNode.innerHTML = opt;
+        console.log(json.usp);
+        // console.log(105, JSON.parse(request.response), )
     })
 </script>
 @endsection
