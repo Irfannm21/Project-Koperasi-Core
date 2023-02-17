@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreAnggotaRequest;
 
 use App\Models\Koperasi\AnggotaKoperasi;
+use App\Models\Koperasi\Pembayaran;
+use App\Models\Koperasi\PinjamanUsp;
+use App\Models\Koperasi\PinjamanEmergensi;
+use App\Models\Koperasi\PinjamanKonsumsi;
+
+
 use Spatie\Permission\Models\Permission;
 use RealRashid\SweetAlert\Facades\Alert;
 use DataTables;
@@ -72,6 +78,14 @@ class AnggotaKoperasiController extends Controller
     }
 
     public function cariAnggota(request $request) {
-        return AnggotaKoperasi::with('simpanan_wajibs')->findOrFail($request->id);
+        $data['anggota'] = AnggotaKoperasi::with('simpanan_wajibs')->findOrFail($request->id);
+        $data['usp'] = PinjamanUsp::with('pembayarans')->where("anggota_id",$request->id)->get();
+        $data['emergensi'] = PinjamanEmergensi::with('pembayarans')->where("anggota_id",$request->id)->get();
+        $data['konsumsi'] = PinjamanKonsumsi::where("anggota_id",$request->id)->get();
+        $data['pembayaran'] = PinjamanKonsumsi::all();
+
+        return $data;
     }
+
+
 }
