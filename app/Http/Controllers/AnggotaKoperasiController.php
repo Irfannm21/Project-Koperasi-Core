@@ -81,8 +81,7 @@ class AnggotaKoperasiController extends Controller
         $data['anggota'] = AnggotaKoperasi::with('simpanan_wajibs')->findOrFail($request->id);
         $data['usp'] = PinjamanUsp::with('pembayarans')->where("anggota_id",$request->id)->get();
         $data['emergensi'] = PinjamanEmergensi::with('pembayarans')->where("anggota_id",$request->id)->get();
-        $data['konsumsi'] = PinjamanKonsumsi::where("anggota_id",$request->id)->get();
-        $data['pembayaran'] = PinjamanKonsumsi::all();
+        $data['konsumsi'] = PinjamanKonsumsi::with('pembayarans')->where("anggota_id",$request->id)->get();
 
         return $data;
     }

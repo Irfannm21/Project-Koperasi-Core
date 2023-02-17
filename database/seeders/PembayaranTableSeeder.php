@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Koperasi\AnggotaKoperasi;
 use App\Models\Koperasi\PinjamanKonsumsi;
 use App\Models\Koperasi\PinjamanUsp;
+use App\Models\Koperasi\PinjamanEmergensi;
 use App\Models\Koperasi\Pembayaran;
 
 class PembayaranTableSeeder extends Seeder
@@ -26,13 +27,13 @@ class PembayaranTableSeeder extends Seeder
         //     ]
         //     ]);
 
-        $usp = PinjamanUsp::find(9);
+        $usp = PinjamanKonsumsi::find(1);
         // dd($usp->all());
 
         $usp->pembayarans()->createMany([
             [
-                "tanggal"  => "2023-01-18",
-                "jumlah" => 500000,
+                "tanggal"  => "2023-02-23",
+                "jumlah" => 700000,
             ]
             ]);
     }

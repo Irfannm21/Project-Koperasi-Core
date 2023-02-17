@@ -124,13 +124,14 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-sm-6">
-                        <h5>Data Pinjaman</h5>
+                        <h5 class="text-center">Data Pinjaman</h5>
                         <table class="table table-responsive-sm table-striped">
                           <thead>
                             <th>Tanggal Pinjam</th>
                             <th>Jumlah</th>
                             <th>Tenor</th>
                             <th>Jumlah cicilan</th>
+                            <th>Keterangan</th>
                           </thead>
                           <tbody id="tb_emergensi">
 
@@ -156,15 +157,16 @@
           </div>
           <div class="col-sm-12">
             <div class="card">
-                <div class="card-header"><h4>Data Konsumsi</h4></div>
+                <div class="card-header"><h4 class="text-center">Data Konsumsi</h4></div>
                 <div class="card-body">
                     <div class="row">
                       <div class="col-sm-6">
-                        <h5>Data Pinjaman</h5>
+                        <h5 class="text-center">Data Pinjaman</h5>
                         <table class="table table-responsive-sm table-striped">
                           <thead>
                             <th>Tanggal Pinjam</th>
                             <th>Jumlah</th>
+                            <th>Keterangan</th>
                           </thead>
                           <tbody id="tb_konsumsi">
 
@@ -178,7 +180,7 @@
                             <th>Tanggal Bayar</th>
                             <th>Jumlah</th>
                           </thead>
-                          <tbody id="tb_bayar_konsumsi">
+                          <tbody id="tb_konsumsi_bayar">
 
                           </tbody>
 
@@ -210,7 +212,9 @@
     var tbUspNode = document.getElementById('tb_usp')
     var tbUspNodeBayar = document.getElementById('tb_usp_bayar')
     var tbEmeNode = document.getElementById('tb_emergensi')
+    var tbEmeNodeBayar = document.getElementById('tb_emergensi_bayar')
     var tbKonsNode = document.getElementById('tb_konsumsi')
+    var tbKonsNodeBayar = document.getElementById('tb_konsumsi_bayar')
     anggotaNode.addEventListener("change",() => {
         let request = new XMLHttpRequest();
 
@@ -229,12 +233,9 @@
 
         total_simpanan = total_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
 
-        // tmkNode.innerHTML = json.anggota.created_at
-        // uspNode.innerHTML = total_cicilan
-
         var opt = ""
         json.anggota.simpanan_wajibs.forEach(element => {
-              opt += "<tr>"
+              opt += "<tr>".toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
               opt += "<td>"+element.tanggal+"</td>"
               opt += "<td>"+element.jumlah_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
               opt += "</tr>";
@@ -258,9 +259,9 @@
           }
           tb_usp += "<tr>"
             tb_usp += "<td>"+element.tanggal+"</td>"
-            tb_usp += "<td>"+element.jumlah+"</td>"
+            tb_usp += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
             tb_usp += "<td>"+element.tenor+"</td>"
-            tb_usp += "<td>"+element.cicilan+"</td>"
+            tb_usp += "<td>"+element.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
              tb_usp += "<td>"+hasil+"</td>"
             tb_usp += "</tr>"
         });
@@ -273,7 +274,7 @@
             element.pembayarans.forEach(value => {
                 tr_usp_bayar += "<tr>"
                 tr_usp_bayar += "<td>"+value.tanggal+"</td>"
-                tr_usp_bayar += "<td>"+value.jumlah+"</td>"
+                tr_usp_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
                 tr_usp_bayar += "</tr>"
             })
         });
@@ -282,30 +283,75 @@
 
         var tb_eme = ""
         json.emergensi.forEach(element => {
+            var total_bayar = element.pembayarans.reduce((n, {jumlah}) => n + jumlah, 0);
+            total_bayar = total_bayar / element.cicilan
+
+            if(total_bayar >= element.tenor) {
+              hasil = "Lunas"
+            } else {
+              hasil = element.tenor - total_bayar
+              hasil = "Sisa : " + hasil+" x"
+          }
             tb_eme += "<tr>"
             tb_eme += "<td>"+element.tanggal+"</td>"
-            tb_eme += "<td>"+element.jumlah+"</td>"
+            tb_eme += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
             tb_eme += "<td>"+element.tenor+"</td>"
-            tb_eme += "<td>"+element.cicilan+"</td>"
+            tb_eme += "<td>"+element.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_eme += "<td>"+hasil+"</td>"
             tb_eme += "</tr>"
         });
         tbEmeNode.innerHTML = tb_eme
 
 
+        var tr_eme_bayar = ""
+        json.emergensi.forEach(element => {
+            element.pembayarans.forEach(value => {
+                tr_eme_bayar += "<tr>"
+                tr_eme_bayar += "<td>"+value.tanggal+"</td>"
+                tr_eme_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+                tr_eme_bayar += "</tr>"
+            })
+        });
+        tbEmeNodeBayar.innerHTML = tr_eme_bayar
+
+
         var tb_kon = ""
         json.konsumsi.forEach(element => {
+            var total_bayar = element.pembayarans.reduce((n, {jumlah}) => n + jumlah, 0);
+
+            if(total_bayar >= element.jumlah) {
+              hasil = "Lunas"
+            } else {
+              hasil = element.jumlah - total_bayar
+              hasil = "Sisa : " + hasil.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+          }
             tb_kon += "<tr>"
             tb_kon += "<td>"+element.tanggal+"</td>"
-            tb_kon += "<td>"+element.jumlah+"</td>"
+            tb_kon += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_kon += "<td>"+hasil.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
             tb_kon += "</tr>"
         });
         tbKonsNode.innerHTML = tb_kon
 
 
+        var tr_kons_bayar = ""
+        json.konsumsi.forEach(element => {
+            element.pembayarans.forEach(value => {
+                tr_kons_bayar += "<tr>"
+                tr_kons_bayar += "<td>"+value.tanggal+"</td>"
+                tr_kons_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+                tr_kons_bayar += "</tr>"
+            })
+        });
+        tbKonsNodeBayar.innerHTML = tr_kons_bayar
 
 
 
-        console.log(json.usp);
+
+
+
+
+        console.log(json.konsumsi);
         // console.log(105, JSON.parse(request.response), )
     })
 </script>
