@@ -231,13 +231,13 @@
         departemenNode.setAttribute("value",json.anggota.departemen)
         bagianNode.setAttribute("value",json.anggota.bagian)
 
-        total_simpanan = total_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+        total_simpanan = total_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})
 
         var opt = ""
         json.anggota.simpanan_wajibs.forEach(element => {
-              opt += "<tr>".toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+              opt += "<tr>".toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})
               opt += "<td>"+element.tanggal+"</td>"
-              opt += "<td>"+element.jumlah_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+              opt += "<td>"+element.jumlah_simpanan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
               opt += "</tr>";
         });
             opt += "<tr>"
@@ -259,9 +259,9 @@
           }
           tb_usp += "<tr>"
             tb_usp += "<td>"+element.tanggal+"</td>"
-            tb_usp += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_usp += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
             tb_usp += "<td>"+element.tenor+"</td>"
-            tb_usp += "<td>"+element.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_usp += "<td>"+element.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
              tb_usp += "<td>"+hasil+"</td>"
             tb_usp += "</tr>"
         });
@@ -274,7 +274,7 @@
             element.pembayarans.forEach(value => {
                 tr_usp_bayar += "<tr>"
                 tr_usp_bayar += "<td>"+value.tanggal+"</td>"
-                tr_usp_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+                tr_usp_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
                 tr_usp_bayar += "</tr>"
             })
         });
@@ -294,9 +294,9 @@
           }
             tb_eme += "<tr>"
             tb_eme += "<td>"+element.tanggal+"</td>"
-            tb_eme += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_eme += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
             tb_eme += "<td>"+element.tenor+"</td>"
-            tb_eme += "<td>"+element.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_eme += "<td>"+element.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
             tb_eme += "<td>"+hasil+"</td>"
             tb_eme += "</tr>"
         });
@@ -308,7 +308,7 @@
             element.pembayarans.forEach(value => {
                 tr_eme_bayar += "<tr>"
                 tr_eme_bayar += "<td>"+value.tanggal+"</td>"
-                tr_eme_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+                tr_eme_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
                 tr_eme_bayar += "</tr>"
             })
         });
@@ -323,12 +323,12 @@
               hasil = "Lunas"
             } else {
               hasil = element.jumlah - total_bayar
-              hasil = "Sisa : " + hasil.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
+              hasil = "Sisa : " + hasil.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})
           }
             tb_kon += "<tr>"
             tb_kon += "<td>"+element.tanggal+"</td>"
-            tb_kon += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
-            tb_kon += "<td>"+hasil.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+            tb_kon += "<td>"+element.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
+            tb_kon += "<td>"+hasil.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
             tb_kon += "</tr>"
         });
         tbKonsNode.innerHTML = tb_kon
@@ -339,7 +339,7 @@
             element.pembayarans.forEach(value => {
                 tr_kons_bayar += "<tr>"
                 tr_kons_bayar += "<td>"+value.tanggal+"</td>"
-                tr_kons_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})+"</td>"
+                tr_kons_bayar += "<td>"+value.jumlah.toLocaleString('id-ID',{style : 'currency', currency : 'IDR',minimumFractionDigits: 0, maximumFractionDigits: 0,})+"</td>"
                 tr_kons_bayar += "</tr>"
             })
         });

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Koperasi\PinjamanUsp;
+use App\Models\Koperasi\PinjamanEmergensi;
+use App\Models\Koperasi\PinjamanKonsumsi;
 use App\Models\Koperasi\AnggotaKoperasi;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -38,6 +40,12 @@ class PinjamanUspController extends Controller
      */
     public function store(Request $request)
     {
+        // dd(intval($request->cicilan));
+        // $request->cicilan = "Rp. 500.000";
+        $request->cicilan = str_replace(['Rp', "."], '', $request->cicilan);
+
+        // dd(trim($request->cicilan));
+
         $anggota = AnggotaKoperasi::find($request->kode);
 
         $val = new PinjamanUsp;
@@ -51,23 +59,12 @@ class PinjamanUspController extends Controller
         return redirect()->route('usp.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\PinjamanUsp  $pinjamanUsp
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(PinjamanUsp $pinjamanUsp)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\PinjamanUsp  $pinjamanUsp
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $anggotas = AnggotaKoperasi::all(['id','kode','nama']);
