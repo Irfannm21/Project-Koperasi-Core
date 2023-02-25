@@ -6,6 +6,7 @@ use App\Models\Koperasi\PinjamanUsp;
 use App\Models\Koperasi\PinjamanEmergensi;
 use App\Models\Koperasi\PinjamanKonsumsi;
 use App\Models\Koperasi\AnggotaKoperasi;
+use App\Http\Requests\PinjamanRequestTable;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 class PinjamanUspController extends Controller
@@ -38,11 +39,11 @@ class PinjamanUspController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PinjamanRequestTable $request)
     {
-        // dd(intval($request->cicilan));
+
+        $cicilan = intval(preg_replace('/[^0-9]/', '',(str_replace(['Rp', ".", ' '], '', $request->cicilan))));
         // $request->cicilan = "Rp. 500.000";
-        $request->cicilan = str_replace(['Rp', "."], '', $request->cicilan);
 
         // dd(trim($request->cicilan));
 
@@ -52,7 +53,7 @@ class PinjamanUspController extends Controller
         $val->tanggal = $request->tanggal;
         $val->jumlah = $request->jumlah;
         $val->tenor = $request->tenor;
-        $val->cicilan = $request->cicilan;
+        $val->cicilan = $cicilan;
 
         $anggota->usps()->save($val);
         Alert::success("Berhasil", "Pinjaman USP dengan Nama " . $anggota->nama . " Telah ditambahkan.");

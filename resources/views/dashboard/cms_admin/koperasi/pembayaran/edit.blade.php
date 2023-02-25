@@ -20,7 +20,7 @@
                   {{-- @if(Session::has('message'))
                       <div class="alert alert-success" role="alert">{{ Session::get('message') }}</div>
                   @endif --}}
-                  <form method="POST" action="{{ route('pembayaran.update', $result->id) }}">
+                  <form method="POST" action="{{ route('pembayaran.update', $result->id) }}" enctype="multipart/form-data">
                       @csrf
                       @method('PUT')
                     @include('dashboard.cms_admin.koperasi.pembayaran.form')

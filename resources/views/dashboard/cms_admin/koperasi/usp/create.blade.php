@@ -41,10 +41,12 @@
 
             cicilan = Math.ceil(cicilan).toLocaleString('id-ID',{style : 'currency', currency : 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0,})
         cicilanNode.setAttribute("value", cicilan)
+    console.log(jumlahNode.value )
+})
 
-
-
-    console.log(cicilan)
+jumlahNode.addEventListener("change", () => {
+        cicilanNode.setAttribute("value", "-- Pilih Tenor Kembali --")
+        // console.log(tenorNode)
 })
 </script>
 @endsection

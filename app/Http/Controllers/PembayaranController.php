@@ -43,7 +43,7 @@ class PembayaranController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
+        dd($request->all());
         $model = "App\Models\Koperasi\\".$request->tipe;
         $usp = $model::find($request->anggota);
         $usp->pembayarans()->createMany([
