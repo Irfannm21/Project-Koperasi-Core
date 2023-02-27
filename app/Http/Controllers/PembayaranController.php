@@ -35,15 +35,10 @@ class PembayaranController extends Controller
         return view('dashboard.cms_admin.koperasi.pembayaran.create',compact('anggotas'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         $model = "App\Models\Koperasi\\".$request->tipe;
         $usp = $model::find($request->anggota);
         $usp->pembayarans()->createMany([
@@ -108,7 +103,7 @@ class PembayaranController extends Controller
 
     public function tipePinjaman(Request $request) {
         $model = "App\Models\Koperasi\\".$request->tipe;
-        return $model::with('anggota')->get();
+        return $model::with('anggota','pembayarans')->get();
     }
 
     public function cariAnggota(Request $request) {

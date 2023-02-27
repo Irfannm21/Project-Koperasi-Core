@@ -29,7 +29,7 @@
         <label for="">Kode / Nama Anggota</label>
     </div>
     <div class="col-md-4">
-        <select name="kode" id="kode" class="form-control">
+        <select name="kode" id="kode" class="form-control select2">
             @if (isset($result))
                 <option value="{{ $result->anggota_id }}" selected>
                     {{ $result->anggota->kode . ' | ' . $result->anggota->nama }}</option>
@@ -70,12 +70,7 @@
         <select name="jumlah" id="jumlah" name="jumlah" class="form-control">
             <option value="">-- Pilih --</option>
             @for ($i = 0; $i <= 39; $i++)
-                @if ($i * 250000 + 250000 == (old('jumlah') ?? ($result->jumlah ?? '')))
-                    <option value="{{ $i * 250000 + 250000 }}" selected>
-                        Rp. {{ number_format($i * 250000 + 250000, 0, ',', '.') }}</option>
-                @endif
-                <option value="{{ $i * 250000 + 250000 }}">
-                    Rp. {{ number_format($i * 250000 + 250000, 0, ',', '.') }}</option>
+                <option value="{{ $i * 250000 + 250000 }}" {{$i * 250000 + 250000 == (old("jumlah") ?? ($result->jumlah ?? '') ?? isset($result->jumlah)) ? 'selected' : ''}}> Rp. {{ number_format($i * 250000 + 250000, 0, ',', '.') }}</option>
             @endfor
         </select>
         @error('jumlah')
@@ -151,3 +146,26 @@
     </div>
 </div>
 <button class="btn btn-primary" type="submit">Save</button>
+
+@section('javascript')
+<script>
+    var jumlahNode = document.getElementById('jumlah');
+    var tenorNode = document.getElementById('tenor')
+    var cicilanNode = document.getElementById('cicilan')
+    tenorNode.addEventListener("change", () => {
+        const selectedOpt = event.target.options[event.target.selectedIndex]
+        const hasil = selectedOpt.getAttribute('name')
+
+        var cicilan = parseInt(jumlahNode.value, 0) * Math.round(hasil * 100000)/100000
+
+            cicilan = Math.ceil(cicilan).toLocaleString('id-ID',{style : 'currency', currency : 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0,})
+        cicilanNode.setAttribute("value", cicilan)
+    console.log(jumlahNode.value )
+})
+
+jumlahNode.addEventListener("change", () => {
+        cicilanNode.setAttribute("value", "-- Pilih Tenor Kembali --")
+        // console.log(tenorNode)
+})
+</script>
+@endsection

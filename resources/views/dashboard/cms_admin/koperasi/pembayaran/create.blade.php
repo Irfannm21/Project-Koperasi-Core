@@ -82,11 +82,13 @@
         let opt = "";
         opt += "<option selected>-- Pilih -- </option>";
         json.forEach(function(person) {
-            opt += "<option value="+person.id+">"+person.anggota.nama+"</option>";
+            var total_bayar = person.pembayarans.reduce((n,{jumlah}) => n + jumlah, 0)
+            if(person.jumlah >= total_bayar) {
+                opt += "<option value="+person.id+">"+person.anggota.nama+"</option>";
+            }
         })
 
         anggotaNode.innerHTML = opt;
-
 
         console.log(105, JSON.parse(request.response),  )
     })

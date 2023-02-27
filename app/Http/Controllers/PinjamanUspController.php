@@ -11,44 +11,37 @@ use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 class PinjamanUspController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $results = PinjamanUsp::all();
         return view('dashboard.cms_admin.koperasi.usp.index',compact('results'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
-        $anggotas = AnggotaKoperasi::all(['id','kode','nama']);
+        $anggotas = AnggotaKoperasi::with('usps')->get();
         return view('dashboard.cms_admin.koperasi.usp.create',compact('anggotas'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(PinjamanRequestTable $request)
     {
 
-        $cicilan = intval(preg_replace('/[^0-9]/', '',(str_replace(['Rp', ".", ' '], '', $request->cicilan))));
-        // $request->cicilan = "Rp. 500.000";
-
-        // dd(trim($request->cicilan));
-
         $anggota = AnggotaKoperasi::find($request->kode);
 
+        foreach($anggota->usps as $val) {
+            if($val->pembayarans->sum('jumlah') >= $val->jumlah) {
+                continue;
+            } else{
+                Alert::error("Gagal", $anggota->nama . " masih mempunyai cicilan, silahkan lunasi terlebih dahulu.");
+                return redirect()->route('usp.index');
+            }
+        }
+
+
+        $cicilan = intval(preg_replace('/[^0-9]/', '',(str_replace(['Rp', ".", ' '], '', $request->cicilan))));
         $val = new PinjamanUsp;
         $val->tanggal = $request->tanggal;
         $val->jumlah = $request->jumlah;
@@ -74,15 +67,16 @@ class PinjamanUspController extends Controller
     }
 
 
-    public function update(Request $request, PinjamanUsp $pinjamanUsp)
+    public function update(PinjamanRequestTable $request, PinjamanUsp $pinjamanUsp)
     {
         $anggota = AnggotaKoperasi::find($request->kode);
 
+        $cicilan = intval(preg_replace('/[^0-9]/', '',(str_replace(['Rp', ".", ' '], '', $request->cicilan))));
         $anggota->usps()->update([
             "tanggal" => $request->tanggal,
             "jumlah" => $request->jumlah,
             "tenor" => $request->tenor,
-            "cicilan" => $request->cicilan
+            "cicilan" => $cicilan
         ]);
         Alert::success("Berhasil", "Pinjaman USP dengan Nama " . $anggota->nama . " Telah ditambahkan.");
         return redirect()->route('usp.index');

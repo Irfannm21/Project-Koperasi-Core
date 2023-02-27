@@ -50,9 +50,9 @@
                                                     </td>
                                                     <td>
                                                         @if ($item->pembayaranable_type == "App\Models\Koperasi\PinjamanUsp")
-                                                        {{$item->pembayaranable->anggota->nama}}
+                                                        {{$item->pembayaranable->anggota->nama ?? ''}}
                                                     @elseif ($item->pembayaranable_type == "App\Models\Koperasi\PinjamanEmergensi")
-                                                        {{$item->pembayaranable->anggota->nama}}
+                                                        {{$item->pembayaranable->anggota->nama ?? ''}}
                                                     @endif
                                                     </td>
                                                     <td>Rp. {{number_format($item->jumlah,2,",",".") ?? ''}}</td>
