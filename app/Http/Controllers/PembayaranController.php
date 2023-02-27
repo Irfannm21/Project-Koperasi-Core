@@ -108,7 +108,7 @@ class PembayaranController extends Controller
 
     public function cariAnggota(Request $request) {
         $model = "App\Models\Koperasi\\".$request->tipe;
-        return $model::find($request->id);
+        return $model::with('pembayarans')->where("id",$request->id)->first();
     }
 
     public function cariJenis(Request $request) {

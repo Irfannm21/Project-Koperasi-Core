@@ -108,7 +108,10 @@
 
         var jumlah = json.cicilan.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
         var opt = "";
-        for($i=1; $i<=json.tenor; $i++){
+        var total_bayar = json.pembayarans.reduce((n,{jumlah}) => n + jumlah, 0) / json.cicilan
+        var sisa_tenor = json.tenor - total_bayar
+        console.log(json)
+        for($i=1; $i<=sisa_tenor; $i++){
             var bayar = json.cicilan*$i;
                 idr = bayar.toLocaleString('id-ID',{style : 'currency', currency : 'IDR'})
             opt += "<option value="+bayar+">"+$i+"x "+idr+"</option>";
@@ -116,24 +119,9 @@
 
         bayarNode.innerHTML = opt;
 
-        console.log("ID USPNYA"+anggotaNode.value);
-        console.log(105, JSON.parse(request.response),  )
+        // console.log("ID USPNYA"+anggotaNode.value);
+        // console.log(105, JSON.parse(request.response),  )
     });
-
-    // anggotaNode.addEventListener("change", () => {
-    //     let request = new XMLHttpRequest();
-
-    //     request.open("GET", "{{ url('pembayaran/cari-id-pinjaman?tipe=')}}"+anggotaNode.value, false);
-    //     request.send();
-
-    //     // console.log(data);
-    //     // console.log("Jenis Pinjamannya"+tipeNode.value)
-
-    //     console.log(105, JSON.parse(request.response),  )
-    // })
-
-
-
 
 
 </script>
