@@ -8,6 +8,7 @@ use App\Models\Koperasi\PinjamanUsp;
 use App\Models\Koperasi\PinjamanKonsumsi;
 use App\Models\Koperasi\PinjamanEmergensi;
 use Illuminate\Http\Request;
+use App\Http\Requests\PembayaranRequestTable;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -36,9 +37,9 @@ class PembayaranController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(PembayaranRequestTable $request)
     {
-        // dd($request->all());
+        dd($request->all());
         $model = "App\Models\Koperasi\\".$request->tipe;
         $usp = $model::find($request->anggota);
         $usp->pembayarans()->createMany([
@@ -108,7 +109,7 @@ class PembayaranController extends Controller
 
     public function cariAnggota(Request $request) {
         $model = "App\Models\Koperasi\\".$request->tipe;
-        return $model::with('pembayarans')->where("id",$request->id)->first();
+            return $model::with('pembayarans')->where("id",$request->id)->first();
     }
 
     public function cariJenis(Request $request) {

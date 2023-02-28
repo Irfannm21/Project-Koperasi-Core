@@ -72,6 +72,8 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::resource('/anggota-koperasi',        'AnggotaKoperasiController');
         Route::resource('/simpanan-wajib', 'SimpananWajibController');
         Route::resource('/usp', 'PinjamanUspController');
+        Route::resource('/emergensi', 'PinjamanEmergensiController');
+        Route::resource('/konsumsi', 'PinjamanKonsumsiController');
         Route::get('/pembayaran/cari-anggota', 'PembayaranController@cariAnggota')->name('pembayarans.cari-anggota');
         Route::get('/pembayaran/tipe-pinjaman', 'PembayaranController@tipePinjaman')->name('pembayarans.tipe-pinjaman');
         Route::get('/pembayaran/cari-jenis', 'PembayaranController@cariJenis')->name('pembayarans.cari-jenis');

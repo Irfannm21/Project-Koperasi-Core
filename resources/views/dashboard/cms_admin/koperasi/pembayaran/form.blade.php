@@ -8,9 +8,9 @@
                 <option value="">{{$result->pembayaranable->anggota->nama}}</option>
             </select>
             @error('kode')
-       <span class="invalid-feedback" role="alert">
-            {{$message}}
-        </span>
+            <span class="text-danger">
+                {{$message}}
+            </span>
         @enderror
     </div>
 </div>
@@ -23,8 +23,8 @@
     <div class="col-md-4">
         <select name="metode" id="metode" class="form-control">
             <option value="" selected>-- Pilih --</option>
-            <option value="individu" {{ (old('departemen') || isset($result)) ? 'selected' : ''}}>Individu</option>
-            <option value="departemen">Kelompok</option>
+            <option value="individu" {{old('metode')}}>Individu</option>
+            <option value="departemen" {{old('metode')}}>Kelompok</option>
         </select>
     </div>
 </div>
@@ -37,9 +37,9 @@
     <div class="col-md-4">
         <select name="tipe" id="tipe" class="form-control">
             <option value="" selected>-- Pilih --</option>
-            <option value="PinjamanUsp" {{ (old('departemen') || isset($result) ? $result->pembayaranable_type : '') == "App\Models\Koperasi\PinjamanUsp" ? 'selected' : ''}}>USP</option>
-            <option value="PinjamanEmergensi" {{ (old('departemen') || isset($result) ? $result->pembayaranable_type : '') == "App\Models\Koperasi\PinjamanEmergensi" ? 'selected' : ''}}>Emergensi</option>
-            <option value="PinjamanKonsumsi" {{ (old('departemen') || isset($result) ? $result->pembayaranable_type : '') == "App\Models\Koperasi\PinjamanKonsumsi" ? 'selected' : ''}}>Konsumsi</option>
+            <option value="PinjamanUsp" {{ old('tipe') }}>USP</option>
+            <option value="PinjamanEmergensi" {{ old('tipe') }}>Emergensi</option>
+            <option value="PinjamanKonsumsi" {{ old('tipe') }}>Konsumsi</option>
         </select>
     </div>
 </div>
@@ -82,8 +82,14 @@
     </div>
     <div class="col-md-4">
         <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{old('tanggal') ?? $result->tanggal ?? '' }}">
+        @error('tanggal')
+        <span class="text-danger">
+            {{$message}}
+        </span>
+    @enderror
     </div>
 </div>
+
 <div class="form-group row">
     <div class="col-md-3">
         <label for="">Jumlah Bayar</label>
@@ -99,6 +105,11 @@
                 @endfor
             @endisset
         </select>
+        @error('bayar')
+        <span class="text-danger">
+            {{$message}}
+        </span>
+    @enderror
     </div>
 </div>
 <button class="btn btn-primary" type="submit">Save</button>
