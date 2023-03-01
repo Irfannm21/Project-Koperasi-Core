@@ -28,7 +28,6 @@ class PinjamanUspController extends Controller
 
     public function store(PinjamanRequestTable $request)
     {
-
         $anggota = AnggotaKoperasi::find($request->kode);
 
         foreach($anggota->usps as $val) {

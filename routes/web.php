@@ -77,6 +77,8 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::get('/pembayaran/cari-anggota', 'PembayaranController@cariAnggota')->name('pembayarans.cari-anggota');
         Route::get('/pembayaran/tipe-pinjaman', 'PembayaranController@tipePinjaman')->name('pembayarans.tipe-pinjaman');
         Route::get('/pembayaran/cari-jenis', 'PembayaranController@cariJenis')->name('pembayarans.cari-jenis');
+        Route::get('/pembayaran/emergensi', 'PembayaranController@emergensi')->name('pembayaran.emergensi');
+        Route::get('/pembayaran/konsumsi', 'PembayaranController@konsumsi')->name('pembayaran.konsumsi');
         Route::Resource('/pembayaran', 'PembayaranController');
         Route::get('prepareSend/{id}',        'MailController@prepareSend')->name('prepareSend');
         Route::post('mailSend/{id}',        'MailController@send')->name('mailSend');
