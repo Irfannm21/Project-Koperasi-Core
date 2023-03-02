@@ -39,7 +39,7 @@ class PembayaranController extends Controller
 
     public function store(PembayaranRequestTable $request)
     {
-        // dd($request->all());
+        dd($request->all());
 
         $bulan = date('m', strtotime($request->tanggal));
 
