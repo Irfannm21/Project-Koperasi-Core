@@ -67,6 +67,7 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::resource('users',        'UsersController')->except( ['create', 'store'] );
         Route::resource('roles',        'RolesController');
         Route::resource('mail',        'MailController');
+        Route::get('/anggota-koperasi/table',        'AnggotaKoperasiController@table');
         Route::get('/anggota-koperasi/show',        'AnggotaKoperasiController@show');
         Route::get('/anggota-koperasi/cari',        'AnggotaKoperasiController@cariAnggota')->name('anggota-koperasi.cari');
         Route::resource('/anggota-koperasi',        'AnggotaKoperasiController');

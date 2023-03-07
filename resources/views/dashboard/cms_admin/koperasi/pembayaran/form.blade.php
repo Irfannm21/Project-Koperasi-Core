@@ -94,7 +94,7 @@
     <div class="col-md-3">
         <label for="">Jumlah Bayar</label>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" id="tipe_jumlah">
         <select name="bayar" id="bayar" class="form-control">
             @isset($result)
                 @for ($i=1; $i <= $result->pembayaranable->tenor; $i++)

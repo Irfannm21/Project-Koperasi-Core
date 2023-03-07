@@ -6,6 +6,7 @@
 
 require('./bootstrap');
 require('axios');
+import 'laravel-datatables-vite';
 window.Vue = require('vue');
 
 /**
