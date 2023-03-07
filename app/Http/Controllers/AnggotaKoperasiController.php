@@ -10,22 +10,45 @@ use App\Models\Koperasi\Pembayaran;
 use App\Models\Koperasi\PinjamanUsp;
 use App\Models\Koperasi\PinjamanEmergensi;
 use App\Models\Koperasi\PinjamanKonsumsi;
-
-
 use Spatie\Permission\Models\Permission;
-use RealRashid\SweetAlert\Facades\Alert;
-use DataTables;
 
+use RealRashid\SweetAlert\Facades\Alert;
+
+use DataTables;
+use Yajra\DataTables\Html\Builder;
 
 
 class AnggotaKoperasiController extends Controller
 {
 
-    public function index(Request $request)
+    public function index(Builder $builder)
     {
-        $results = AnggotaKoperasi::get(['id','kode','nama','departemen','bagian']);
+        if (request()->ajax()) {
+            return DataTables::of(AnggotaKoperasi::all())->toJson();
+        }
 
-        return view('dashboard.cms_admin.koperasi.anggota.index', compact('results'));
+        $html = $builder->columns([
+            ['data' => 'kode','name' => 'kode','title' => 'Kode Anggota'],
+            ['data' => 'nama','name' => 'nama','title' => 'Nama'],
+            ['data' => 'departemen','name' => 'departemen','title' => 'Departemen'],
+            ['data' => 'bagian','name' => 'bagian','title' => 'Bagian'],
+        ]);
+        Builder::macro('addEditColumn', function () {
+            $attributes = [
+                'title'          => 'Edit',
+                'data'           => 'edit',
+                'name'           => '',
+                'orderable'      => false,
+                'searchable'     => false,
+            ];
+
+            $this->collection->push(new Column($attributes));
+
+
+            return $this;
+        });
+
+        return view('dashboard.cms_admin.koperasi.anggota.index', compact('html'));
     }
 
     public function create()
@@ -86,5 +109,8 @@ class AnggotaKoperasiController extends Controller
         return $data;
     }
 
+    public function table() {
+        return DataTables::of(AnggotaKoperasi::all())->toJson();
+    }
 
 }
