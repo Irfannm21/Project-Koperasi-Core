@@ -4203,3 +4203,1225 @@ Stack trace:
 #3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
 #4 {main}
 "} 
+[2023-03-07 06:11:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:12:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:13:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:14:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:15:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:16:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:17:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:18:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:19:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:20:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:21:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:22:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:23:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:24:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:25:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:26:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:27:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:28:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:29:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:30:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:31:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:32:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:33:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:34:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:35:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:36:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:37:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:38:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:39:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:40:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:41:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:42:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:43:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:44:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:45:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:46:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:47:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:48:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:49:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:50:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:51:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:52:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:53:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:54:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:55:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:56:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 
+[2023-03-07 06:57:10] local.ERROR: Uncaught Error: Interface "Spatie\MediaLibrary\HasMedia" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"Spatie\\MediaLibrary\\HasMedia\" not found in /var/www/html/portofolio-koperasi/app/Models/Folder.php:9
+Stack trace:
+#0 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(582): include()
+#1 /var/www/html/portofolio-koperasi/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#3 Command line code(1): class_exists()
+#4 [internal function]: {closure}()
+#5 Command line code(1): array_filter()
+#6 {main}
+  thrown at /var/www/html/portofolio-koperasi/app/Models/Folder.php:9)
+[stacktrace]
+#0 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: '...', code: '...', error: '...', traceOffset: '...', traceArgs: '...', trace: '...')
+#1 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '...', traceOffset: '...')
+#2 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 /var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:/var/www/html/portofolio-koperasi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:265-267}()
+#4 {main}
+"} 

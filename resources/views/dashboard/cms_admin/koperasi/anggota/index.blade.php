@@ -45,10 +45,24 @@
 @endsection
 
 @section('javascript')
-@push('scripts')
-    {!! $html->scripts  () !!}
-@endpush
 <script>
+   const tableBody = document.getElementById('dataTableBuilder');
+    window.onload = function () {
+        let request = new XMLHttpRequest();
+
+        request.open("GET","{{url('/anggota-koperasi/table')}}", false)
+        request.send()
+
+        var json = JSON.parse(request.response);
+
+        json.data.forEach(function(obj){
+            const row = tableBody.insertRow();
+            row.insertCell().textContent = obj.id;
+            row.insertCell().textContent = obj.kode;
+            row.insertCell().textContent = obj.nama;
+            row.insertCell().textContent = obj.departemen;
+        })
+    }
 
 </script>
 @endsection
